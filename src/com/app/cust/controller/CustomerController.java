@@ -26,5 +26,12 @@ public class CustomerController {
 		
 		return "success";
 	}
+@RequestMapping("/addcustomer")
+	public String saveCustomer(@ModelAttribute("cutomer") Customer cutomer){
+		
+		cs.addCustomer(cutomer);
+		
+		return "success";
+	}
 
 }
